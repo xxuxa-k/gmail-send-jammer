@@ -1,7 +1,22 @@
 {
-  "name": "gmail-send-jammer",
+  "name": "Gmail送信ボタン無効化",
+  "description": "メールチェックアドオン強制利用のため、Gmail送信ボタンのクリックを無効化します。Ctrl + Enterによる送信は可能です。",
   "manifest_version": 3,
   "version": "0.1",
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "38": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "24": "images/icon24.png",
+      "38": "images/icon48.png"
+    },
+    "default_title": "Gmail送信ボタン無効化"
+  },
   "content_scripts": [
     {
       "matches": ["https://mail.google.com/*/*"],
