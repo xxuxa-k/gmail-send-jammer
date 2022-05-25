@@ -1,0 +1,19 @@
+.gmail-send-jammer-tooltip {
+  display: inline-block;
+  position: relative;
+}
+/* .gmail-send-jammer-tooltip::hover { */
+/*   cursor: not-allowed;              */
+/* }                                   */
+
+.gmail-send-jammer-tooltip::before,
+.gmail-send-jammer-tooltip::after {
+  -webkit-transition: all 0.2s;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.2s;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+
