@@ -10,7 +10,7 @@ function disableSendButton() {
     button.style["pointerEvents"] = 'none';
     parent.style["cursor"] = 'not-allowed';
     parent.classList.add('gmail-send-jammer-tooltip');
-    parent.setAttribute('data-tooltip', 'Gmail送信前チェッカーから送信してください');
+    parent.setAttribute('data-tooltip', 'Gmail Draft Checkerから送信してください');
   }
   setTimeout(disableSendButton, 500)
 }
